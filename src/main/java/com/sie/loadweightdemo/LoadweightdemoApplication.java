@@ -30,7 +30,7 @@ public class LoadweightdemoApplication extends SpringBootServletInitializer{
 		try {
 			 SatWeightApplet satWeightApplet = new SatWeightApplet();
 	         weight = satWeightApplet.loadWeight();
-	         returnData.setKey("SUCC");
+	         returnData.setKey("ERR");
 	         returnData.setValue(weight);
 		} catch (Exception e) {
 			e.printStackTrace();
